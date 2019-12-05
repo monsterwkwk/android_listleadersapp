@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 
 class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<DataLeader>): BaseAdapter() {
     override fun getView(index: Int, view: View?, viewGroup: ViewGroup?): View {
@@ -29,5 +30,14 @@ class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<DataLe
         private val tvLeadersDesciption: TextView = view.findViewById(R.id.tvListDescription)
         private val tvLeaderCountry: TextView = view.findViewById(R.id.tvListCountry)
         private val ivLeadersPhoto: ImageView = view.findViewById(R.id.ivListImage)
+
+        fun bind(context: Context, leaders: ModelLeader) {
+            tvLeadersName.text = leaders.name
+            tvLeadersDesciption.text = leaders.desc
+            tvLeaderCountry.text = leaders.country
+            Glide.with(context)
+                .load(leaders.photo)
+                .into(ivLeadersPhoto)
+        }
     }
 }
