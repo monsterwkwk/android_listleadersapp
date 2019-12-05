@@ -73,7 +73,7 @@
             android:id="@+id/tvMsg"
             style="@style/Login.TextMsg"
             android:layout_marginBottom="10dp"
-            android:text="Success"/>
+            android:text=""/>
 
     </LinearLayout>
 
