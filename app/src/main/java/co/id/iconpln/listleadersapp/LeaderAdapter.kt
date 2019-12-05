@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 
-class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<DataLeader>): BaseAdapter() {
+class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<ModelLeader>): BaseAdapter() {
     override fun getView(index: Int, view: View?, viewGroup: ViewGroup?): View {
         val viewLayout = LayoutInflater.from(context)
             .inflate(R.layout.item_list, viewGroup, false)
