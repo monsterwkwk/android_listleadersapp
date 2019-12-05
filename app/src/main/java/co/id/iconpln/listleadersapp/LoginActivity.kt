@@ -1,5 +1,6 @@
 package co.id.iconpln.listleadersapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_login.*
@@ -17,7 +18,12 @@ class LoginActivity : AppCompatActivity() {
             var check: Boolean = checkLogin(email, password)
 
             if(check) {
-                tvMsg.setText("Lets go !")
+                val intent = Intent(this, MainActivity::class.java)
+                val bundle = Bundle()
+                bundle.putString(MainActivity.EXTRA_BUNDLE_EMAIL, email)
+                bundle.putString(MainActivity.EXTRA_BUNDLE_PASSWORD, password)
+                intent.putExtras(bundle)
+                startActivity(intent)
             }
         }
     }
