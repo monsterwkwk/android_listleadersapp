@@ -4,6 +4,8 @@ import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
+import android.widget.TextView
 
 class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<DataLeader>): BaseAdapter() {
     override fun getView(index: Int, view: View?, viewGroup: ViewGroup?): View {
@@ -22,4 +24,10 @@ class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<DataLe
         return listWorldLeaders.size
     }
 
+    private inner class ViewHolder(view: View) {
+        private val tvLeadersName: TextView = view.findViewById(R.id.tvListTitle)
+        private val tvLeadersDesciption: TextView = view.findViewById(R.id.tvListDescription)
+        private val tvLeaderCountry: TextView = view.findViewById(R.id.tvListCountry)
+        private val ivLeadersPhoto: ImageView = view.findViewById(R.id.ivListImage)
+    }
 }
