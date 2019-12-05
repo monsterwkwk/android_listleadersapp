@@ -11,7 +11,8 @@ object DataLeader {
                 val leaders = ModelLeader()
                 leaders.name = data[0]
                 leaders.desc = data[1]
-                leaders.photo = data[2]
+                leaders.country = data[2]
+                leaders.photo = data[3]
                 list.add(leaders)
             }
             return list
