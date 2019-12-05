@@ -40,15 +40,8 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:text="Enter Your Credentials"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            style="@style/Login.LoginMsg"
+            android:text="Enter Your Credentials" />
 
         <View
             android:layout_width="match_parent"
@@ -60,44 +53,27 @@
 
         <EditText
             android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:hint="E-mail" />
+            style="@style/Login.EditText"
+            android:hint="E-mail"
+            android:textColorHint="@android:color/tertiary_text_light"/>
 
         <EditText
             android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:hint="Password" />
+            style="@style/Login.EditText"
+            android:hint="Password"
+            android:textColorHint="@android:color/tertiary_text_light"/>
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
+            style="@style/Login"
             android:background="@drawable/bg_button"
+            android:layout_marginTop="15dp"
             android:text="Login" />
 
         <TextView
             android:id="@+id/tvMsg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp"
-            android:text="Result"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_red_light" />
+            style="@style/Login.TextMsg"
+            android:layout_marginTop="20dp" />
 
     </LinearLayout>
 

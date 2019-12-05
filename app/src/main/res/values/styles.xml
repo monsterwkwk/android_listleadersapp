@@ -8,12 +8,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <!-- Login -->
-    <style name="TextLogin" parent="Theme.AppCompat">
-        <item name="android:layout_width">wrap_content</item>
+    <style name="Login" parent="Theme.AppCompat">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/login_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/login_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+    </style>
+
+    <style name="Login.LoginMsg">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
     </style>
+
+    <style name="Login.EditText">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Login.TextMsg">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
 
     <!-- Content -->
     <style name="TextContent" parent="TextAppearance.AppCompat">
