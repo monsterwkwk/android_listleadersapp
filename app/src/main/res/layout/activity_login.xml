@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_text_appName"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Login.LoginMsg"
+            android:text="@string/login_text_loginMsg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/Login.EditText"
+            android:hint="@string/login_hint_email"
+            android:textColorHint="@android:color/tertiary_text_light"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Login.EditText"
+            android:inputType="textPassword"
+            android:hint="@string/login_hint_password"
+            android:textColorHint="@android:color/tertiary_text_light"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/Login"
+            android:background="@drawable/bg_button"
+            android:text="@string/login_btn_login" />
+
+        <TextView
+            android:id="@+id/tvMsg"
+            style="@style/Login.TextMsg"
+            android:layout_marginBottom="10dp"
+            android:text="@string/login_text_statusMsg"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

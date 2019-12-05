@@ -4,4 +4,8 @@
     <dimen name="margin_vertical">10dp</dimen>
     <dimen name="margin_horizontal_half">8dp</dimen>
     <dimen name="margin_vertical_half">8dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_margin_horizontal">30dp</dimen>
+    <dimen name="login_margin_vertical">10dp</dimen>
 </resources>
