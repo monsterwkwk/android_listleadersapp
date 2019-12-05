@@ -14,9 +14,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="200dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/ic_logo" />
 
         <TextView
@@ -24,14 +24,14 @@
             android:layout_height="wrap_content"
             android:text="Leaders of World"
             android:textColor="@color/colorAccent"
-            android:textSize="30sp" />
+            android:textSize="22sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llBottm"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/llTop"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
@@ -67,13 +67,13 @@
             android:id="@+id/btnLogin"
             style="@style/Login"
             android:background="@drawable/bg_button"
-            android:layout_marginTop="15dp"
             android:text="Login" />
 
         <TextView
             android:id="@+id/tvMsg"
             style="@style/Login.TextMsg"
-            android:layout_marginTop="20dp" />
+            android:layout_marginBottom="10dp"
+            android:text="Success"/>
 
     </LinearLayout>
 
