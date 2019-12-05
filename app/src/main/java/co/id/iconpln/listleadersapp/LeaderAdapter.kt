@@ -1,6 +1,7 @@
 package co.id.iconpln.listleadersapp
 
 import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
@@ -10,7 +11,14 @@ import com.bumptech.glide.Glide
 
 class LeaderAdapter(val context: Context, val listWorldLeaders: ArrayList<DataLeader>): BaseAdapter() {
     override fun getView(index: Int, view: View?, viewGroup: ViewGroup?): View {
+        val viewLayout = LayoutInflater.from(context)
+            .inflate(R.layout.item_list, viewGroup, false)
 
+        val viewHolder = ViewHolder(viewLayout)
+        val leaders = getItem(index) as ModelLeader
+        viewHolder.bind(context, leaders)
+
+        return viewLayout
     }
 
     override fun getItem(index: Int): Any {
