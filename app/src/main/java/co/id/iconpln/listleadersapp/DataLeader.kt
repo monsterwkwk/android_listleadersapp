@@ -25,6 +25,7 @@ object DataLeader {
         arrayOf(
             "Jawaharlal Nehru",
             "Jawaharlal Nehru lahir 14 November 1889 – meninggal 27 Mei 1964 pada umur 74 tahun merupakan negarawan India yang pertama (dan yang paling melayani terlama) sebegai perdana menteri India dari tahun 1947 sampai 1964. Sebagai tokoh terkemuka dalam kemerdekaan gerakan kemerdekaan India",
+            "India",
             "https://upload.wikimedia.org/wikipedia/commons/8/80/Jawaharlal_Nehru.jpg"
         ),
         arrayOf(
