@@ -15,7 +15,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">@dimen/login_margin_horizontal</item>
         <item name="android:layout_marginEnd">@dimen/login_margin_horizontal</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/login_margin_vertical</item>
     </style>
 
     <style name="Login.LoginMsg">
@@ -31,6 +31,37 @@
     <style name="Login.TextMsg">
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+
+    <!-- List -->
+    <style name="List">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/list_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/list_margin_horizontal</item>
+    </style>
+
+    <style name="List.Title">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="List.Description">
+        <item name="android:layout_marginTop">@dimen/list_margin_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>"
+    </style>
+
+    <style name="List.Country">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:textSize">12dp</item>
     </style>
 
 
