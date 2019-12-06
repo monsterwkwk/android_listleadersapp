@@ -25,6 +25,7 @@ class LeaderDetailActivity : AppCompatActivity() {
 
         initIntentExtras()
         displayLeaderDetail()
+        setupActionbar()
     }
 
     // object
@@ -47,5 +48,10 @@ class LeaderDetailActivity : AppCompatActivity() {
             )
             .into(ivDetailImage)
 
+    }
+
+    private fun setupActionbar(){
+        supportActionBar?.title = leader.name
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }
