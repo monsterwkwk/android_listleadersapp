@@ -3,6 +3,7 @@ package co.id.iconpln.listleadersapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -64,8 +65,9 @@ class LeaderDetailActivity : AppCompatActivity() {
     }
 
     private fun setupActionbar(){
-        supportActionBar?.title = leader.name
+        setSupportActionBar(findViewById(R.id.toolbarDetail))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = leader.name
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

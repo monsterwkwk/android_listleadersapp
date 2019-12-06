@@ -9,8 +9,16 @@
         android:layout_height="match_parent"
         tools:context=".LeaderDetailActivity">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp" />
+
         <ImageView
             android:id="@+id/ivDetailImage"
+            android:layout_below="@id/toolbarDetail"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerInside"
