@@ -2,6 +2,7 @@ package co.id.iconpln.listleadersapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.activity_leader_detail.*
@@ -53,5 +54,17 @@ class LeaderDetailActivity : AppCompatActivity() {
     private fun setupActionbar(){
         supportActionBar?.title = leader.name
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> {
+                false
+            }
+        }
     }
 }
