@@ -34,10 +34,14 @@
     </style>
 
 
-    <!-- Content -->
-    <style name="TextContent" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <!-- Details -->
+    <style name="Detail" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/detail_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/detail_margin_horizontal</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:padding">5dp</item>
     </style>
 
 </resources>

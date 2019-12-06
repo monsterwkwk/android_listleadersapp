@@ -18,14 +18,10 @@
 
         <LinearLayout
             android:id="@+id/llHead"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            style="@style/Detail"
             android:layout_below="@+id/ivDetailImage"
-            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tvDetailTitle"
@@ -48,13 +44,9 @@
 
         <LinearLayout
             android:id="@+id/llBody"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            style="@style/Detail"
             android:layout_below="@+id/llHead"
-            android:layout_marginHorizontal="10dp"
-            android:baselineAligned="false"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvDetailCountry"

@@ -8,4 +8,9 @@
     <!-- Login -->
     <dimen name="login_margin_horizontal">30dp</dimen>
     <dimen name="login_margin_vertical">10dp</dimen>
+
+    <!-- Detail Leader -->
+    <dimen name="detail_margin_horizontal">10dp</dimen>
+    <dimen name="detail_margin_vertical">10dp</dimen>
+
 </resources>
