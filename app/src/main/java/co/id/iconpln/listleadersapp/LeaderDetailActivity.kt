@@ -56,10 +56,11 @@ class LeaderDetailActivity : AppCompatActivity() {
 
     private fun share(){
         ivDetailImg.setOnClickListener {
-            val str = "${leader.name}: ${leader.desc}"
+            val str = "${leader.share}"
             val intent = Intent(Intent.ACTION_SEND)
-            intent.putExtra(Intent.EXTRA_TEXT, str)
             intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT, str)
+
             startActivity(intent)
         }
     }
