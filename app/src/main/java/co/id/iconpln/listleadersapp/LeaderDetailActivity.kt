@@ -2,6 +2,9 @@ package co.id.iconpln.listleadersapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import kotlinx.android.synthetic.main.activity_leader_detail.*
 
 class LeaderDetailActivity : AppCompatActivity() {
 
@@ -21,10 +24,28 @@ class LeaderDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_leader_detail)
 
         initIntentExtras()
+        displayLeaderDetail()
     }
 
     // object
     private fun initIntentExtras() {
         leader = intent.getParcelableExtra(EXTRA_HERO)
+    }
+
+    private fun displayLeaderDetail(){
+        // using object
+        tvDetailTitle.text = leader.name
+        tvDetailDescription.text = leader.desc
+        tvDetailCountry.text = leader.country
+        Glide.with(this)
+            .load(leader.photo)
+            .apply(
+                RequestOptions()
+                    .centerCrop()
+                    .placeholder(R.drawable.ic_launcher_foreground)
+                    .error(R.drawable.ic_launcher_foreground)
+            )
+            .into(ivDetailImage)
+
     }
 }
