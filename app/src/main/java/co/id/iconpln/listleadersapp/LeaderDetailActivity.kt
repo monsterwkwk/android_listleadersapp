@@ -1,5 +1,6 @@
 package co.id.iconpln.listleadersapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -26,6 +27,7 @@ class LeaderDetailActivity : AppCompatActivity() {
 
         initIntentExtras()
         displayLeaderDetail()
+        share()
         setupActionbar()
     }
 
@@ -49,6 +51,16 @@ class LeaderDetailActivity : AppCompatActivity() {
             )
             .into(ivDetailImage)
 
+    }
+
+    private fun share(){
+        ivDetailImg.setOnClickListener {
+            val str = "${leader.name}: ${leader.desc}"
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.putExtra(Intent.EXTRA_TEXT, str)
+            intent.type = "text/plain"
+            startActivity(intent)
+        }
     }
 
     private fun setupActionbar(){
