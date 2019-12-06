@@ -19,5 +19,12 @@ class LeaderDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_leader_detail)
+
+        initIntentExtras()
+    }
+
+    // object
+    private fun initIntentExtras() {
+        leader = intent.getParcelableExtra(EXTRA_HERO)
     }
 }
