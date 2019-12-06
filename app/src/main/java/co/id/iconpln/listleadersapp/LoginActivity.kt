@@ -1,5 +1,6 @@
 package co.id.iconpln.listleadersapp
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -29,7 +30,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkLogin(email: String, password: String): Boolean {
+    // add extention function to Activity
+    private fun Activity.checkLogin(email: String, password: String): Boolean {
         var isSuccess: Boolean = false
 
         if (etEmail.text.isNullOrEmpty() && etPassword.text.isNullOrEmpty()){
