@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
             R.id.action_logout -> {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
+                finish()
                 return true
             }
         }
