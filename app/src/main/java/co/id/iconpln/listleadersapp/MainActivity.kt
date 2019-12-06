@@ -3,6 +3,9 @@ package co.id.iconpln.listleadersapp
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ListView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +22,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loadListBaseAdapter(this)
+        setListItemClickListener()
+    }
+
+    private fun setListItemClickListener(listView: ListView) {
+        listView.onItemClickListener = object : AdapterView.OnItemClickListener{
+            override fun onItemClick(adapterView: AdapterView<*>?, view: View?, index: Int, l: Long) {
+
+            }
+        }
     }
 
     fun loadListBaseAdapter(context: Context) {
