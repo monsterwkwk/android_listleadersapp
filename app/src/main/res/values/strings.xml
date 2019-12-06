@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">ListLeadersApp</string>
+    <!-- Login -->
+    <string name="login_text_appName">Leaders of World</string>
+    <string name="login_text_loginMsg">Enter Your Credentials</string>
+    <string name="login_hint_email">E-mail</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_btn_login">Login</string>
+    <string name="login_text_statusMsg" />
+    <!-- Item List -->
+    <string name="item_list_title">Title</string>
+    <string name="item_list_description">A hero is a real person or a main fictional character of a literary work who, in the face of danger, combats adversity through feats of ingenuity, courage, or strength; the original hero type of classical epics did such things for the sake of glory and honor.</string>
+    <string name="item_list_country">Indonesia</string>
+    <!-- Detail Item List -->
+    <string name="detail_list_title">Title</string>
+    <string name="detail_list_description">A hero is a real person or a main fictional character of a literary work who, in the face of danger, combats adversity through feats of ingenuity, courage, or strength; the original hero type of classical epics did such things for the sake of glory and honor. A hero is a real person or a main fictional character of a literary work who, in the face of danger, combats adversity through feats of ingenuity, courage, or strength; the original hero type of classical epics did such things for the sake of glory and honor.</string>
+    <string name="detail_list_country">Indonesia</string>
+
 </resources>

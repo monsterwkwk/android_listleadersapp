@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_horizontal">10dp</dimen>
-    <dimen name="margin_vertical">10dp</dimen>
-    <dimen name="margin_horizontal_half">8dp</dimen>
-    <dimen name="margin_vertical_half">8dp</dimen>
+    <!-- List -->
+    <dimen name="list_margin_horizontal">8dp</dimen>
+    <dimen name="list_margin_vertical">5dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_margin_horizontal">30dp</dimen>
+    <dimen name="login_margin_vertical">10dp</dimen>
+
+    <!-- Detail Leader -->
+    <dimen name="detail_margin_horizontal">10dp</dimen>
+    <dimen name="detail_margin_vertical">10dp</dimen>
+
 </resources>

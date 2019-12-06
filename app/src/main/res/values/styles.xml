@@ -1,24 +1,78 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <!-- Login -->
-    <style name="TextLogin" parent="Theme.AppCompat">
-        <item name="android:layout_width">wrap_content</item>
+    <style name="Login" parent="Theme.AppCompat">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/login_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/login_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/login_margin_vertical</item>
+    </style>
+
+    <style name="Login.LoginMsg">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
     </style>
 
-    <!-- Content -->
-    <style name="TextContent" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">wrap_content</item>
+    <style name="Login.EditText">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Login.TextMsg">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+
+    <!-- List -->
+    <style name="List">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/list_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/list_margin_horizontal</item>
+    </style>
+
+    <style name="List.Title">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="List.Description">
+        <item name="android:layout_marginTop">@dimen/list_margin_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>"
+    </style>
+
+    <style name="List.Country">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+
+    <!-- Details -->
+    <style name="Detail" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/detail_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/detail_margin_horizontal</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:padding">5dp</item>
     </style>
 
 </resources>
