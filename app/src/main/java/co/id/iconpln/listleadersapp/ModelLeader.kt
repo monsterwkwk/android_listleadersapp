@@ -8,5 +8,6 @@ data class ModelLeader (
     var name: String = "",
     var desc: String = "",
     var country: String = "",
+    var share: String = "",
     var photo: String = ""
 ): Parcelable
