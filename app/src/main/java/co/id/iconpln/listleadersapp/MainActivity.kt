@@ -1,6 +1,7 @@
 package co.id.iconpln.listleadersapp
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -22,15 +23,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loadListBaseAdapter(this)
-        setListItemClickListener()
+        setListItemClickListener(lvLeaders)
     }
 
     private fun setListItemClickListener(listView: ListView) {
         listView.onItemClickListener = object : AdapterView.OnItemClickListener{
             override fun onItemClick(adapterView: AdapterView<*>?, view: View?, index: Int, l: Long) {
-
+                showDetailHero(list[index])
             }
         }
+    }
+
+    private fun showDetailHero(leader: ModelLeader){
+        val intent = Intent(this, LeaderDetailActivity::class.java)
+
+        // using object extra
+        intent.putExtra(LeaderDetailActivity.EXTRA_HERO, leader)
+        startActivity(intent)
     }
 
     fun loadListBaseAdapter(context: Context) {
