@@ -24,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
                 bundle.putString(MainActivity.EXTRA_BUNDLE_PASSWORD, password)
                 intent.putExtras(bundle)
                 startActivity(intent)
+                finish()
             }
         }
     }
